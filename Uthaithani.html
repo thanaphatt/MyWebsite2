@@ -1,7 +1,6 @@
 <html>
 <head> <div align="center">
-  <h1><font face="Srinakharinwirot" style="color:#121212" > <strong>Uthaithani Travel Map</h1>
-  <hr width="1000" size="3" color="#630000"> <br>
+  <h1><font face="Srinakharinwirot" style="color:#91C483" > <strong>🌍 Uthaithani Tourist Map 🌋</h1>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +21,7 @@
   </style>
   <title> Tourist Map </title>
 </head>
-<body bgcolor="#D1D1D1">
+<body bgcolor="#F8F8F8" style="color:#91C483">
   <!-- link หน้าจอ ภาษา html/css -->
   <div class="w3-row">
          <div id="mapid" class="w3-half"></div>
@@ -49,7 +48,7 @@ var map = L.map("mapid").setView([15.476284425520397, 99.75784584699066],9);
 var osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
             .addTo(map);
             //based map2
-var gsat = L.tileLayer("https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}")
+var gsat = L.tileLayer("http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png")
             .addTo(map);
             //1+2
 var baseMaps ={
